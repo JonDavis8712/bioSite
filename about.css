@@ -1,0 +1,158 @@
+/* Basic Styling */
+body {
+    font-family: sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+    color: #2c3e50; /* Midnight Blue for text */
+    background-color: #2980b9; /* Deep Sky Blue for background */
+}
+
+/* Header */
+header {
+    background-color:#2c3e50; /* Orange Yellow for header */
+    color: #f39c12;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #343a40; /* Dark Gray */
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f39c12; /* Orange Yellow on hover */
+    color: #2c3e50; /* Midnight Blue text on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 0; 
+}
+
+.left-column, .right-column {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.left-column {
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 5px 6px 10px black; 
+}
+
+.right-column .image-box {
+    height: 350px;
+    border-radius: 5px;
+    background-color: #ccc; 
+    margin-bottom: 20px;
+    border: 2px solid #e74c3c;
+    box-shadow: 5px 6px 10px black; 
+}
+
+
+
+#image_1 {
+    background-image: url("images/cellphone-clipboard-with-small-house-model-blueprint.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+#image_2 {
+    background-image: url("images/IMG_2274.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+#image_3 {
+    background-image: url("images/IMG_2284\(1\).jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Interview Section */
+#interview {
+    margin-top: 20px; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 6px 10px black;  
+}
+
+.interview-content {
+    font-size: 1.1em;
+}
+
+.interview-content ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.interview-content li {
+    margin-bottom: 25px; 
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; 
+}
+
+.interview-content strong {
+    color: #e74c3c; 
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 1.2em; 
+}
+
+.interview-content p {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; 
+    color: white;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    margin: 0; 
+    padding: 10px; 
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
