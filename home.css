@@ -1,0 +1,123 @@
+body {
+    font-family: sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+    color: #2c3e50; /* Midnight Blue for text */
+    background-color: #2980b9; /* Deep Sky Blue for background */
+}
+
+/* Header */
+header {
+    background-color:#2c3e50; /* Orange Yellow for header */
+    color: #f39c12;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    display: flex; /* Make the items go horizontally */
+    justify-content: space-around; /* Distribute items evenly */
+}
+nav li {
+    margin: 0 10px;
+    border: 5px solid #f39c12;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.nav-item {
+    position: relative; /* For positioning the title */
+}
+
+.nav-item img {
+    width: 100%; /* Make image take up full width of container */
+    height: auto; /* Maintain aspect ratio */
+    filter: blur(5px); /* Initial blur effect */
+    transition: filter 0.3s ease; /* Smooth transition for blur */
+}
+
+.nav-item:hover img {
+    filter: blur(0); /* Remove blur on hover */
+}
+
+.nav-item .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    /* Added backdrop-filter to blur the background behind the title */
+    backdrop-filter: blur(5px);
+    padding: 10px; /* Add some padding for better visibility */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.nav-item:hover .title {
+    opacity: 1; /* Show title on hover */
+}
+
+h2,h1 {
+    color: #f39c12;
+}
+.title {
+    color: rgb(255, 255, 255);
+    border: solid #f39c12;
+}
+hr {
+    border: 1px solid white; /* White horizontal rule */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; 
+    color: white;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    margin: 0; 
+    padding: 10px; 
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
