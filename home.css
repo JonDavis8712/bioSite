@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6; 
-    color: #2c3e50; /* Midnight Blue for text */
+    color: #2c3e50;
     background-color: #2980b9; /* Deep Sky Blue for background */
 }
 
@@ -37,35 +37,38 @@ nav ul {
     padding: 0;
     background-color: transparent;
     text-align: center;
-    display: flex; /* Make the items go horizontally */
-    justify-content: space-around; /* Distribute items evenly */
+    display: flex; 
+    justify-content: space-around; 
 }
 nav li {
-    margin: 0 10px;
+    margin: 0;
+    padding: 0;
     border: 5px solid #f39c12;
+    box-shadow: 5px 6px 10px black;
     border-radius: 5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 0;
+    margin: 0;
     border-radius: 5px;
 }
 
 .nav-item {
-    position: relative; /* For positioning the title */
+    position: relative; 
 }
 
 .nav-item img {
-    width: 100%; /* Make image take up full width of container */
-    height: auto; /* Maintain aspect ratio */
-    filter: blur(5px); /* Initial blur effect */
-    transition: filter 0.3s ease; /* Smooth transition for blur */
+    width: 100%; 
+    height: auto; 
+    filter: blur(5px); 
+    transition: filter 0.3s ease; 
 }
 
 .nav-item:hover img {
-    filter: blur(0); /* Remove blur on hover */
+    filter: blur(0); 
 }
 
 .nav-item .title {
@@ -74,10 +77,9 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2em;
-    /* Added backdrop-filter to blur the background behind the title */
     backdrop-filter: blur(5px);
-    padding: 10px; /* Add some padding for better visibility */
-    border-radius: 5px; /* Optional: add rounded corners */
+    padding: 10px; 
+    border-radius: 5px;
 }
 
 .nav-item:hover .title {
@@ -90,9 +92,6 @@ h2,h1 {
 .title {
     color: rgb(255, 255, 255);
     border: solid #f39c12;
-}
-hr {
-    border: 1px solid white; /* White horizontal rule */
 }
 
 /* Footer */
